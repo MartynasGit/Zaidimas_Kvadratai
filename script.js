@@ -6,6 +6,9 @@ let kompScore = 0;
 let roundas = 0;
 let paleidimas = false;
 let kvadratoPaspaudimas;
+let kvadratoIntervalas = null;
+let intervalas = null;
+let laikas = 0
 //Random funkcijos
 function randomSkaicius(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
@@ -13,7 +16,7 @@ function randomSkaicius(min, max) { // min and max included
 const randColor = () =>  {
     return "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
 }
-//Zaidimo funcijos
+
 const nemat = document.querySelectorAll('.nematoma');
 const showGame = () =>{  //Atvaizduoja zaidimo score, likusi laika
     nemat.forEach((item) => {item.style.visibility ="initial"} )
@@ -23,7 +26,7 @@ const hideGame = () =>{ //Paslepia score ir laika
     document.querySelector('.matoma').style.visibility = "initial"
     nemat.forEach((item) => {item.style.visibility ="hidden"})
 }
-//Jeigu zmogus daugiau kompiuteris turi dagiau tasku pridedam round score.
+//Jeigu zmogus daugiau arba kompiuteris turi dagiau tasku pridedam round score.
 const rounduSkaiciuokle = () => {
     if(zmogusScore > kompScore){
         zmogusRound++
@@ -56,7 +59,7 @@ const ankstRound = () => {
         return `Roundas baigėsi lygiosiomis su ${kompScore} `
 }
 
-//Kvadrato atvaizdavimo ir paleidimo funckija
+//Kvadrato atvaizdavimo funckija
 const kvadrato = () =>{
 let spalva = randColor();
 let kaire = randomSkaicius(1, 100);
@@ -67,6 +70,7 @@ kvadr.style.backgroundColor = spalva
 kvadr.style.left = `${kaire}%`
 kvadr.style.bottom = `${apacia}%`
 }
+
 const kvadrClicked = () =>{
     kvadratoPaspaudimas = 1;
     document.querySelector('.kvadratas').style.backgroundColor = "red";
@@ -93,9 +97,6 @@ const periodas = () =>{
     atvaizdavimas() 
     kvadratoPatikra()
 }
-let kvadratoIntervalas = null;
-let intervalas = null;
-let laikas = 0
 
 const kvadratas = () => {
     if (roundas < 10) {
