@@ -1,0 +1,11 @@
+2022-07-15.
+Sukurkite žaidimą.
+Žaidimą žaidžia du žaidėjai: Player(Jūs) ir Kompiuteris. 
+Žaidimą sudaro 10 roundų, vieno roundo trukmė 30 sekundžių. 
+Raundą laimi tas žaidėjas kuris surenka daugiau taškų.
+Kiekvieno raundo pabaigoje atvaizduokite laimėtojo vardą, surinktus taškus raunde ir visus laimėtus roundus prie žaidėjų vardų.
+Žaidimo esmė:
+Puslapyje atvaizduojamas kvadratas(50px x 50px) kuris keičia savo atsitiktinę poziciją bei savo fono spalvą kas 1 sekundę. 
+Jeigu žaidėjas spėja per šį laiko tarpą paspausti ant kvadrato - taškas skiriamas jam. Priešingu atveju laimi kompiuteris.
+Kiekviename rounde naršyklėje atvaizduokite laikmatį skaičiuojantį roundo trukmę. 
+Pasibaigus žaidimui atvaizduokite laimėtojo vardą bei mygtuką, ant kurio paspaudus žaidimas būtų pradedamas iš naujo.
