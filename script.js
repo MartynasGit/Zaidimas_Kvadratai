@@ -63,7 +63,7 @@ const ankstRound = () => {
 const kvadrato = () =>{
 let spalva = randColor();
 let kaire = randomSkaicius(1, 100);
-let apacia = randomSkaicius(1, 60);
+let apacia = randomSkaicius(1, 55);
 const kvadr = document.querySelector('.kvadratas')
 kvadr.style.visibility = "initial"
 kvadr.style.backgroundColor = spalva
