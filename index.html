@@ -11,30 +11,26 @@
 </head>
 <body>
     <script src="script.js" defer></script>
-    <div class="container">
-        <div class="col-12 d-flex flex-lg-row">
+    <div class="">
+        <div class="col-10 d-flex flex-row fs-6">
             <div class="col-4 bg-primary">
                 <h1 class="h1 text-start p-3 fw-bold">Kvadratai THE GAME</h1>
-                <div class="col-5 p-3 pt-0 d-flex flex-column">
+                <div class="col-6 ps-2 pt-0 d-flex flex-column">
                     <button class="btn btn-warning my-1 matoma fw-bold" onclick="pradzia()">Pradėti</button>
                     <div class="nematoma">
                         <button class="btn btn-warning my-1 fw-bold" onclick="baigti()">Išjungti žaidimą</button>
                     </div>
                 </div>
             </div>
-            <div class="score nematoma col-5 m-2">
-                <table class="form-control">
-                    <tr>
-                        <td class="zaidejo-laimeti">Žaidejo laimeti roundai:  </td>
-                    </tr>
-                    <tr>
-                        <td class="kompiuterio-laimeti"> Kompiuterio laimeti roundai: </td>
-                    </tr>
-                    <tr>
-                        <td class="zaidejas-rounds"></td>
-                    </tr>
-                        <td class="komp-rounds"></td>
-                </table>
+            <div class="score nematoma col-4 p-3 bg-warning fw-bold text-dark">
+                <div>
+                    <div>
+                        <p class="zaidejo-laimeti">Žaidejo laimeti roundai:  </p>
+                    </div>
+                        <p class="kompiuterio-laimeti"> Kompiuterio laimeti roundai: </p>
+                        <p class="zaidejas-rounds"></p>
+                        <p class="komp-rounds"></p>
+                </div>
                 <div class="preitas-game">Preitas roundas: </div>
                 <div class="laikmatis"></div> 
                 <div class="roundas"></div> 

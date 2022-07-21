@@ -1,6 +1,10 @@
 .nematoma{
     visibility: hidden;
 }
+.nematoma p {
+    padding: 0px;
+    margin: 0px;
+}
 .kvadratas{
     visibility: hidden;
     width: 50px;
