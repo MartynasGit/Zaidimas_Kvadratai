@@ -62,6 +62,7 @@ const ankstRound = () => {
 //Kvadrato atvaizdavimo funckija
 const kvadrato = () =>{
 let spalva = randColor();
+document.querySelector('.kvadratas').style.backgroundImage = "none"
 let kaire = randomSkaicius(1, 100);
 let apacia = randomSkaicius(1, 55);
 const kvadr = document.querySelector('.kvadratas')
@@ -73,7 +74,8 @@ kvadr.style.bottom = `${apacia}%`
 
 const kvadrClicked = () =>{
     kvadratoPaspaudimas = 1;
-    document.querySelector('.kvadratas').style.backgroundColor = "red";
+    document.querySelector('.kvadratas').style.backgroundImage = "url('media/cat1.jpg')"
+    document.querySelector('.kvadratas').style.backgroundSize = "cover"
     playSound();
 }
 const scoreNulinimas = () => {

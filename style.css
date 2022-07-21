@@ -20,3 +20,7 @@
     left: 25%;
     bottom: 40%;
 }
+.lol{
+    background-image: url('media/cat1.jpg');
+    background-size: cover;
+}
